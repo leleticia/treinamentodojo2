@@ -1,0 +1,55 @@
+Using the default profile...
+# language: pt
+#utf-8
+Funcionalidade: Cadastrar usuario
+    Eu como administrador do sistema
+    Quero cadastrar novo usuario
+    Para o usuario ter acesso ao sistema
+
+  Contexto: Acessar pagina para controle do site
+    [32mDado que eu acesse a pagina do sistema Suite[0m
+
+  [36m@cadastrar[0m
+  Esquema do Cenário: Cadastrar usuario no sistema Suite
+    [36mQuando realizar o login com perfil de ADM[0m
+    [36mEntão efetuo o cadastro do novo usuario[0m
+
+    Exemplos: 
+      | [36m[1mSubject[0m[0m[36m[0m |[0m
+      | [32mLeticia[0m[0m |[0m
+
+# language: pt
+#utf-8
+Funcionalidade: Realizar controle de usuarios no site
+	Eu como administrador do site
+	Quero ter todas as permissões necessárias
+	Para realizar inclusão, alteração e exclusão de usuário no sistema
+
+  [36m@deletar[0m
+  Cenário: Excluir Usuario
+    [32mDado que eu acesse a pagina do sistema Suite[0m
+    [32mQuando excluir um usuario[0m
+    [32mEntao o mesmo deve ser excluido do sistema[0m
+
+# language: pt
+#utf-8
+Funcionalidade: Editar usuario
+    Eu como administrador do sistema
+    Quero editar um  usuario
+    Para alterar o dados do usuario 
+
+  Contexto: Acessar pagina para controle do site
+    [32mDado que eu acesse a pagina do sistema Suite[0m
+
+  [36m@editar[0m
+  Esquema do Cenário: Editar usuario no sistema Suite
+    [36mQuando editar dados de um usuario[0m
+    [36mEntao o mesmo deve ser atualizado no sistema[0m
+
+    Exemplos: 
+      | [36m[1mSubject[0m[0m[36m[0m |[0m
+      | [32mMaria  [0m[0m |[0m
+
+3 scenarios ([32m3 passed[0m)
+9 steps ([32m9 passed[0m)
+1m8.210s
